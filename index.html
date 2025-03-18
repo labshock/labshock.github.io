@@ -3,9 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <title>Labshock</title>
+  <meta name="description" content="Labshock - Build your OT lab, emulate ICS systems, run realistic attacks, detect and defend, and test SIEM correlations." />
+  <meta name="author" content="Labshock Team" />
+  <meta name="keywords" content="Labshock, OT Security, ICS Security, SIEM, PLC, SCADA, Industrial Cybersecurity, OT Penetration Testing, IDS Training, SIEM Integration, Control Systems Security" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Labshock - OT Cybersecurity Lab" />
+  <meta property="og:description" content="Build your OT lab, emulate ICS systems, run realistic attacks, detect and defend, and test SIEM correlations." />
+  <meta property="og:image" content="img/og-image.png" />
+  <meta property="og:url" content="https://labshock.com" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Labshock - OT Cybersecurity Lab" />
+  <meta name="twitter:description" content="Build your OT lab, emulate ICS systems, run realistic attacks, detect and defend, and test SIEM correlations." />
+  <meta name="twitter:image" content="img/og-image.png" />
+  <title>Labshock - OT Security Lab</title>
   <link rel="icon" type="image/x-icon" href="img/favicon.ico" width="4" height="4"/>
   <script src="https://use.fontawesome.com/releases/v6.6.0/js/all.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
@@ -16,28 +27,29 @@
   <source src="./img/bg.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-<body id="page-top" class="">
+<body id="page-top">
   <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" itemscope itemtype="https://schema.org/SiteNavigationElement">
     <div class="container">
-      <a class="navbar-brand" href="#page-top">
-        <img src="img/navbar-logo.png"/>
+      <a class="navbar-brand" href="/" itemprop="url">
+        <img src="img/navbar-logo.png" alt="Brand Logo" itemprop="logo"/>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars ms-1"></i>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" 
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu <i class="fas fa-bars ms-1"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0 fw-bold">
-          <li class="nav-item"><a class="nav-link" href="#problem">Problem</a></li>
-          <li class="nav-item"><a class="nav-link" href="#solution">Solution</a></li>
-          <li class="nav-item"><a class="nav-link" href="#flow">Flow</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item" itemprop="name"><a class="nav-link" href="#problem" itemprop="url">Problem</a></li>
+          <li class="nav-item" itemprop="name"><a class="nav-link" href="#solution" itemprop="url">Solution</a></li>
+          <li class="nav-item" itemprop="name"><a class="nav-link" href="#flow" itemprop="url">Flow</a></li>
+          <li class="nav-item" itemprop="name"><a class="nav-link" href="#about" itemprop="url">About</a></li>
+          <li class="nav-item" itemprop="name"><a class="nav-link" href="#contact" itemprop="url">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
+
   <!-- Masthead-->
   <header class="masthead">
     <div class="container text-light">
@@ -50,40 +62,48 @@
   </header>
 
   <!-- Problem -->
-  <section class="page-section bg-black" id="problem">
+  <section class="page-section bg-black" id="problem" itemscope itemtype="https://schema.org/FAQPage">
     <div class="container">
       <div class="text-center">
-        <h2 class="section-heading text-uppercase text-primary">Problem</h2>
+        <h2 class="section-heading text-uppercase text-primary" itemprop="name">Problem</h2>
         <h3 class="section-subheading text-secondary">Gaps in ICS Cybersecurity</h3>
       </div>
       <div class="text-light row text-center">
-        <div class="col-md-4">
+        <div class="col-md-4" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <span class="fa-stack fa-4x mb-5">
-            <img class="img-fluid" src="img/problem/1.png"/>
+            <img class="img-fluid" src="img/problem/1.png" alt="Training Centers Problem"/>
           </span>
           <h4 class="my-2 text-primary">Training Centers</h4>
-          <h4 class="my-2">Lack of Real OT Cybersecurity</h4>
-          <p> 85% of OT security pros say hands-on training is essential, yet most programs lack real PLC, SCADA and industrial protocols. Students graduate unprepared for real-world ICS threats.</p>
+          <h4 class="my-2" itemprop="name">Lack of Real OT Cybersecurity</h4>
+          <p itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <span itemprop="text">85% of OT security pros say hands-on training is essential, yet most programs lack real PLC, SCADA and industrial protocols. Students graduate unprepared for real-world ICS threats.</span>
+          </p>
           <p><strong class="text-success">No real OT environments</strong></p>
           <p><strong class="text-success">Theory-heavy, practice-limited</strong></p>
         </div>
-        <div class="col-md-4">
+        
+        <div class="col-md-4" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <span class="fa-stack fa-4x mb-5">
-            <img class="img-fluid yellow-filter" src="img/problem/2.png"/>
+            <img class="img-fluid yellow-filter" src="img/problem/2.png" alt="Red Teams Problem"/>
           </span>
-          <h4 class="my-2 text-primary">Read Teams</h4>
-          <h4 class="my-2">No Safe OT Pentesting Space</h4>
-          <p>90% OT networks ban live testing, leaving pentesters without a way to practice ICS attacks. Without exploit-ready environments, skills and systems remain untested.</p>
+          <h4 class="my-2 text-primary">Red Teams</h4>
+          <h4 class="my-2" itemprop="name">No Safe OT Pentesting Space</h4>
+          <p itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <span itemprop="text">90% of OT networks ban live testing, leaving pentesters without a way to practice ICS attacks. Without exploit-ready environments, skills and systems remain untested.</span>
+          </p>
           <p><strong class="text-success">No safe ICS attack testing</strong></p>
           <p><strong class="text-success">Limited access to real OT setups</strong></p>
         </div>
-        <div class="col-md-4">
+        
+        <div class="col-md-4" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <span class="fa-stack fa-4x mb-5">
-            <img class="img-fluid white" src="img/problem/3.png"/>
+            <img class="img-fluid white" src="img/problem/3.png" alt="Blue Teams Problem"/>
           </span>
           <h4 class="my-2 text-primary">Blue Teams</h4>
-          <h4 class="my-2">SIEM & IDS Validation Fails</h4>
-          <p>95% of security teams struggle to test SIEM correlation rules and AI/ML models for IDS due to a lack of real OT attack data. Defenses stay reactive instead of proactive.</p>
+          <h4 class="my-2" itemprop="name">SIEM & IDS Validation Fails</h4>
+          <p itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <span itemprop="text">95% of security teams struggle to test SIEM correlation rules and AI/ML models for IDS due to a lack of real OT attack data. Defenses stay reactive instead of proactive.</span>
+          </p>
           <p><strong class="text-success">No real OT attack simulations</strong></p>
           <p><strong class="text-success">Weak detection tuning</strong></p>
         </div>
@@ -99,7 +119,9 @@
     <div class="container">
       <div class="text-center text-muted">
         <h2 class="section-heading text-uppercase text-primary">Solution</h2>
-        <h3 class="section-subheading ">Labshock's services solve all your problems</h3>
+          <h3 class="section-subheading text-secondary">
+            Labshock provides hands-on ICS cybersecurity training, testing and validation.
+          </h3>
       </div>
       <div class="row">
         <div class="col-xl-4 col-md-12">
@@ -107,7 +129,7 @@
           <div class="solution-item">
             <a class="solution-link" data-bs-toggle="modal" href="#solutionModal1">
               <div class="solution-img">
-                <img class="img-fluid-small" src="img/solution/1.png"/>
+                <img class="img-fluid-small" src="img/solution/1.png" alt="OT IDS Training"/>
               </div>
             </a>
             <div class="solution-caption bg-black">
@@ -121,7 +143,7 @@
           <div class="solution-item">
             <a class="solution-link" data-bs-toggle="modal" href="#solutionModal2">
               <div class="solution-img">
-                <img class="img-fluid-small" src="img/solution/2.png"/>
+                <img class="img-fluid-small" src="img/solution/2.png" alt="SIEM integration for OT Security"/>
               </div>
             </a>
             <div class="solution-caption bg-black">
@@ -135,7 +157,7 @@
           <div class="solution-item">
             <a class="solution-link" data-bs-toggle="modal" href="#solutionModal3">
               <div class="solution-img">
-                <img class="img-fluid-small" src="img/solution/3.png"/>
+                <img class="img-fluid-small" src="img/solution/3.png" alt="Industrial penetration testing"/>
               </div>
             </a>
             <div class="solution-caption bg-black">
@@ -149,7 +171,7 @@
           <div class="solution-item">
             <a class="solution-link" data-bs-toggle="modal" href="#solutionModal4">
               <div class="solution-img">
-                <img class="img-fluid-small" src="img/solution/4.png"/>
+                <img class="img-fluid-small" src="img/solution/4.png" alt="SCADA emulation for industrial security"/>
               </div>
             </a>
             <div class="solution-caption bg-black">
@@ -163,7 +185,7 @@
           <div class="solution-item">
             <a class="solution-link" data-bs-toggle="modal" href="#solutionModal5">
               <div class="solution-img">
-                <img class="img-fluid-small" src="img/solution/5.png"/>
+                <img class="img-fluid-small" src="img/solution/5.png" alt="PLC security testing"/>
               </div>
             </a>
             <div class="solution-caption bg-black">
@@ -177,7 +199,7 @@
           <div class="solution-item">
             <a class="solution-link" data-bs-toggle="modal" href="#solutionModal6">
               <div class="solution-img">
-                <img class="img-fluid-small" src="img/solution/6.png"/>
+                <img class="img-fluid-small" src="img/solution/6.png" alt="ICS cybersecurity training"/>
               </div>
             </a>
             <div class="solution-caption bg-black">
@@ -194,8 +216,8 @@
   <section class="page-section bg-dark" id="flow">
     <div class="container">
       <div class="text-center">
-        <h2 class="section-heading text-uppercase text-primary">Flow</h2>
-        <h3 class="section-subheading text-muted">How Labshock Works</h3>
+        <h2 class="section-heading text-uppercase text-primary">Workflow: Step-by-Step Guide</h2>
+        <h3 class="section-subheading text-muted">Set Up, Learn, Test and Secure Your OT Network</h3>
       </div>
       <ul class="timeline text-light">
         <li>
@@ -205,7 +227,7 @@
           <div class="timeline-panel">
             <div class="timeline-heading">
               <h4 class="text-success pt-5">Step 1</h4>
-              <h4 class="subheading text-primary">Run Labshock</h4>
+              <h4 class="subheading text-primary">Deploy OT Lab in Minutes</h4>
             </div>
             <div class="timeline-body">
               <p>Deploy your OT Lab in less than 10 minutes.</p>
@@ -221,7 +243,7 @@
           <div class="timeline-panel">
             <div class="timeline-heading">
               <h4 class="text-success pt-5">Step 2</h4>
-              <h4 class="subheading text-primary">Learn SCADA and PLC Basics</h4>
+              <h4 class="subheading text-primary">Learn SCADA & PLC Communication</h4>
             </div>
             <div class="timeline-body">
               <p> Explore how SCADA and PLCs communicate in industrial environments.</p>
@@ -237,7 +259,7 @@
           <div class="timeline-panel">
             <div class="timeline-heading">
               <h4 class="text-success pt-5">Step 3</h4>
-              <h4 class="subheading text-primary">Pentest ICS Network and Simulate Attacks</h4>
+              <h4 class="subheading text-primary">Conduct OT Penetration Testing & Attack Simulation</h4>
             </div>
             <div class="timeline-body">
               <p>Use Labshock's attack simulation tools to test ICS vulnerabilities.</p>
@@ -253,7 +275,7 @@
           <div class="timeline-panel">
             <div class="timeline-heading">
               <h4 class="text-success pt-5">Step 4</h4>
-              <h4 class="subheading text-primary">Detect and Train IDS</h4>
+              <h4 class="subheading text-primary">Detect ICS Threats & Train IDS Models</h4>
             </div>
             <div class="timeline-body">
               <p>Set up IDS to monitor network activity and detect attacks.</p>
@@ -269,7 +291,7 @@
           <div class="timeline-panel">
             <div class="timeline-heading">
               <h4 class="text-success pt-5">Step 5</h4>
-              <h4 class="subheading text-primary">Create and Test SIEM Correlation Rules</h4>
+              <h4 class="subheading text-primary">Integrate OT Logs & Optimize SIEM Detection</h4>
             </div>
             <div class="timeline-body">
               <p>Integrate Labshock logs into your SIEM.</p>
@@ -285,7 +307,7 @@
           <div class="timeline-panel">
             <div class="timeline-heading">
               <h4 class="text-success pt-5">Step 6</h4>
-              <h4 class="subheading text-primary">Create and Run Custom Scenarios</h4>
+              <h4 class="subheading text-primary">Create Custom OT Security Scenarios</h4>
             </div>
             <div class="timeline-body">
               <p>Build your own OT security labs.</p>
@@ -297,116 +319,115 @@
       </ul>
     </div>
   </section>
-
-  <!-- About-->
+  <!-- About -->
   <section class="page-section" id="about">
     <div class="container text-light">
       <div class="text-center text-primary">
-        <h2 class="section-heading text-uppercase py-4">About Labshock</h2>
+        <h1 class="section-heading text-uppercase py-4">What is Labshock?</h1>
       </div>
       <div class="row">
         <div class="col-lg-4">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/labshock-logo.png"/>
-            <h4>Labshock</h4>
-            <p class="text-muted">Hands-on OT/ICS Security Lab</p>
-            <a class="btn btn-dark btn-social mx-2" href="https://github.com/zakharb/labshock">
+            <img class="mx-auto rounded-circle" src="img/labshock-logo.png" alt="Labshock Logo"/>
+            <h2>Labshock</h2>
+            <p class="text-muted">Hands-on OT/ICS Security Lab for Testing, Research and Training</p>
+
+            <a class="btn btn-dark btn-social mx-2" href="https://github.com/zakharb/labshock" aria-label="GitHub">
               <i class="fab fa-github"></i>
             </a>
-            <a class="btn btn-dark btn-social mx-2" href="https://discord.gg/bpmaQFfW76">
+            <a class="btn btn-dark btn-social mx-2" href="https://discord.gg/bpmaQFfW76" aria-label="Discord">
               <i class="fa-brands fa-discord"></i>
             </a>
-            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/zakharb/">
+            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/zakharb/" aria-label="LinkedIn">
               <i class="fa-brands fa-linkedin"></i>
             </a>
           </div>
         </div>
         <div class="col-lg-8">
           <p class="h5">
-            Labshock is a practical OT/ICS cybersecurity lab designed for hands-on learning, testing, and research. It provides a ready-to-use environment for security professionals, researchers, and engineers to explore industrial protocols, attack scenarios, and defensive strategies.
+            <strong>Labshock is a hands-on OT/ICS cybersecurity lab</strong> designed for security professionals, engineers and researchers. It provides a ready-to-use environment to analyze industrial protocols, simulate attacks and test defensive strategies.
           </p>
           <p class="h5">
-            The goal of Labshock is to bridge the gap between IT and OT security by offering a controlled environment where users can simulate real-world attacks, monitor network traffic, and develop effective security measures. Whether you're testing ICS visibility tools, refining SIEM integrations, or running red team exercises, Labshock provides the infrastructure to do it safely.
+            Whether you're enhancing OT visibility, refining SIEM integrations, or running red team exercises, <strong>Labshock offers a safe and controlled environment</strong> to improve your industrial cybersecurity skills.
           </p>
           <p class="h5">
-            Labshock is built to support both individual learners and organizations looking to enhance their OT security capabilities. By focusing on accessibility and realism, it enables deeper understanding and practical skills that are essential for securing industrial environments.
+            <strong>Why choose Labshock?
+            <ul> 
+            <li>Real-world OT attack simulation</li>
+            <li>Secure industrial network monitoring</li>
+            <li>Hands-on training for cybersecurity professionals</li>
+            <li>Open-source and community-driven</li>
+          </ul>
+          </strong> 
           </p>
         </div>
       </div>
     </div>
   </section>
-  <section class="page-section  bg-dark text-center" id="contact">
+  <!-- Contact -->
+  <section class="page-section bg-dark text-center" id="contact">
     <div class="container text-light">
-      <h2 class="section-heading text-uppercase py-4 text-primary">Get Started with Labshock</h2>
-        <br></br>
-      <p class="h5">Ready to explore hands-on OT/ICS security?</p>
-      <p class="h5">Whether you're an individual learner, researcher, or enterprise, Labshock provides the tools you need.</p>
-      <div class="mt-4">
-        <br></br>
-        <a class="btn btn-secondary btn-xl text-uppercase mt-2" href="https://discord.gg/labshock">Join Community</a>
-        <a class="btn btn-primary btn-xl text-uppercase mt-2" href="https://github.com/zakharb/labshock">Try Labshock</a>
-        <a class="btn btn-success btn-xl text-uppercase mt-2" href="mailto:zebernhardt@icloud.com">Contact Us</a>
+      <h1 class="section-heading text-uppercase py-4 text-primary">Get Started with Labshock</h1>
+      <p class="h5 mt-5">
+        <strong>Hands-on OT/ICS security starts here.</strong>  
+      </p>
+        
+      <p class="h5">
+        Whether you're an individual learner, researcher, or enterprise, Labshock provides the tools you need.
+      </p>
+      <p class="h5">
+        Join the community, explore industrial security and put your skills to the test.
+      </p>
+      <div class="mt-5">
+        <a class="btn btn-secondary btn-xl text-uppercase mt-2" href="https://discord.gg/bpmaQFfW76" aria-label="Join the Labshock Discord Community">
+          Join Community
+        </a>
+        <a class="btn btn-primary btn-xl text-uppercase mt-2" href="https://github.com/zakharb/labshock" aria-label="Try Labshock on GitHub">
+          Try Labshock
+        </a>
+        <a class="btn btn-success btn-xl text-uppercase mt-2" href="mailto:zebernhardt@icloud.com" aria-label="Contact Labshock">
+          Contact Us
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Footer-->
+  <!-- Footer -->
   <footer class="footer p-3 bg-dark text-light">
-    <div class="container">
-      Copyright &copy; Labshock / Zakhar Bernhardt 2025
+    <div class="container text-center">
+      <p class="mb-0">
+        Copyright &copy; <span id="year"></span> Labshock / Zakhar Bernhardt
+      </p>
     </div>
   </footer>
 
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
   <!-- solution Modals-->
   <!-- solution item 1 modal popup-->
-  <div class="solution-modal modal fade" id="solutionModal1" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="solution-modal modal fade" id="solutionModal1" tabindex="-1" role="dialog" aria-labelledby="solutionModal1Title" aria-hidden="true">
     <div class="modal-dialog mx-auto">
       <div class="modal-content bg-dark2">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8">
-              <div class="modal-body text-muted">
-                <!-- Project details -->
-                <img class="img-fluid d-block" src="img/modal/1.png"/>
-                <p class="item-intro ">Network Swiftness - IDS for OT</p>
-                <ul class="list-inline text-light">
-                  <li>Network Swiftness is advanced IDS tailored for OT/ICS environments.</li>
-                  <li>It connects with OT SIEM for centralized event correlation.</li>
-                  <li>Simple web UI to analyze network traffic.</li>
-                  <li>ML by design, no need for static rules.</li>
-                  <li>Save attack traffic to train your IDS.</li>
+              <div class="modal-body text-light">
+                <h2 id="solutionModal1Title" class="text-uppercase text-primary">Network Swiftness - OT IDS</h2>
+                <img class="img-fluid d-block mt-3" src="img/modal/1.png" alt="Network Swiftness OT IDS Interface" loading="lazy"/>
+                <p class="item-intro mt-3">
+                  <strong>Network Swiftness</strong> is an advanced Intrusion Detection System (IDS) designed specifically for OT/ICS environments. It enhances industrial network security through real-time traffic analysis and machine learning-driven detection.
+                </p>
+                <h3 class="mt-4">Key Features</h3>
+                <ul class="list-unstyled">
+                  <li>🔸 <strong>Web-Based UI</strong>: simple interface for quick traffic analysis</li>
+                  <li>🔸 <strong>Machine Learning Detection</strong>: no need for static rule updates</li>
+                  <li>🔸 <strong>OT-Specific IDS</strong>: built for industrial networks, reducing false positives</li>
+                  <li>🔸 <strong>OT SIEM Integration</strong>: seamless event correlation for enhanced visibility</li>
+                  <li>🔸 <strong>Traffic Logging</strong>: save attack traffic to continuously improve detection</li>
                 </ul>
-                <button class="btn btn-primary" data-bs-dismiss="modal" type="button">
-                  Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- solution item 2 modal popup-->
-  <div class="solution-modal modal fade" id="solutionModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog mx-auto">
-      <div class="modal-content bg-dark2">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <div class="modal-body text-muted">
-                <!-- Project details -->
-                <img class="img-fluid d-block" src="img/modal/2.png"/>
-                <p class="item-intro">Tidal Collector - OT SIEM Data Pipeline</p>
-                <ul class="list-inline text-light">
-                  <li>Tidal Collector seamlessly integrates data flow into your OT SIEM.</li>
-                  <li>Collect data from OT sources with minimal performance impact.</li>
-                  <li>Normalize and aggregate data before forwarding to save costs.</li>
-                  <li>Analyze data before sending it to SIEM, reducing noise.</li>
-                  <li>Simple and fast web UI to check connected devices.</li>
-                </ul>
-                <button class="btn btn-primary" data-bs-dismiss="modal" type="button">
-                  Close
-                </button>
+                <button class="btn btn-primary mt-3" data-bs-dismiss="modal" type="button">Close</button>
               </div>
             </div>
           </div>
@@ -415,26 +436,84 @@
     </div>
   </div>
 
-  <!-- solution item 3 modal popup-->
-  <div class="solution-modal modal fade" id="solutionModal3" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Solution Item 2 Modal Popup -->
+  <div class="solution-modal modal fade" id="solutionModal2" tabindex="-1" role="dialog" aria-labelledby="solutionModal2Title" aria-hidden="true">
     <div class="modal-dialog mx-auto">
       <div class="modal-content bg-dark2">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8">
-              <div class="modal-body text-muted">
-                <!-- Project details -->
-                <img class="img-fluid d-block" src="img/modal/3.png"/>
-                <p class="item-intro">Pentest - OT Security Testing</p>
-                <ul class="list-inline text-light">
-                  <li>Kali Linux is integrated into the current Labshock release for security testing.</li>
-                  <li>Pentest Fury, coming in a future release, will introduce advanced pentest features.</li>
-                  <li>Simulate real-world OT attacks with Pentest Fury for better risk assessment.</li>
-                  <li>Designed for OT environments, ensuring precise attack simulations and vulnerability identification.</li>
+              <div class="modal-body text-light">
+                <h2 id="solutionModal2Title" class="text-uppercase text-primary">Tidal Collector - OT SIEM Data Pipeline</h2>
+                <img class="img-fluid d-block mt-3" src="img/modal/2.png" alt="Tidal Collector - OT SIEM Data Pipeline Interface" loading="lazy"/>
+                <p class="item-intro mt-3">
+                  <strong>Tidal Collector</strong> is an optimized OT SIEM data pipeline that efficiently collects, normalizes and forwards industrial security logs, ensuring better performance and cost savings.
+                </p>
+                <h3 class="mt-4">Key Features</h3>
+                <ul class="list-unstyled">
+                  <li>🔸 <strong>Cost Optimization</strong>: aggregates and normalizes logs to reduce SIEM storage costs</li>
+                  <li>🔸 <strong>OT SIEM Integration</strong>: collects and forwards logs with minimal performance</li>
+                  <li>🔸 <strong>Noise Reduction</strong>: pre-processes data before sending to SIEM, improving detection efficiency</li>
+                  <li>🔸 <strong>Real-Time Visibility</strong>: web UI provides quick access to connected devices and log status</li>
                 </ul>
-                <button class="btn btn-primary" data-bs-dismiss="modal" type="button">
-                  Close
-                </button>
+                <button class="btn btn-primary mt-3" data-bs-dismiss="modal" type="button">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Solution Item 3 Modal Popup -->
+  <div class="solution-modal modal fade" id="solutionModal3" tabindex="-1" role="dialog" aria-labelledby="solutionModal3Title" aria-hidden="true">
+    <div class="modal-dialog mx-auto">
+      <div class="modal-content bg-dark2">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="modal-body text-light">
+                <h2 id="solutionModal3Title" class="text-uppercase text-primary">Pentest Fury - OT Security Testing</h2>
+                <img class="img-fluid d-block mt-3" src="img/modal/3.png" alt="Pentest Fury - OT Penetration Testing Tool" loading="lazy"/>
+                <p class="item-intro mt-3">
+                  <strong>Pentest Fury</strong> is an advanced OT/ICS security testing tool designed to simulate real-world industrial attacks, identify vulnerabilities and enhance risk assessment.
+                </p>
+                <h3 class="mt-4">Key Features</h3>
+                <ul class="list-unstyled">
+                  <li>🔸 <strong>Built for OT Security Testing</strong>: simulate real-world ICS cyberattacks</li>
+                  <li>🔸 <strong>Integrated with Kali Linux</strong>: leverage existing security tools in Labshock</li>
+                  <li>🔸 <strong>Future-Ready</strong>: Pentest Fury will introduce advanced attack simulations</li>
+                  <li>🔸 <strong>Targeted Assessments</strong>: designed for industrial environments to improve security posture</li>
+                </ul>
+                <button class="btn btn-primary mt-3" data-bs-dismiss="modal" type="button">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Solution Item 4 Modal Popup -->
+  <div class="solution-modal modal fade" id="solutionModal4" tabindex="-1" role="dialog" aria-labelledby="solutionModal4Title" aria-hidden="true">
+    <div class="modal-dialog mx-auto">
+      <div class="modal-content bg-dark2">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="modal-body text-light">
+                <h2 id="solutionModal4Title" class="text-uppercase text-primary">SCADA - Hands-On Training</h2>
+                <img class="img-fluid d-block mt-3" src="img/modal/4.png" alt="SCADA hands-on training interface" loading="lazy"/>
+                <p class="item-intro mt-3">
+                  <strong>SCADA Hands-On Training</strong> provides practical experience with industrial control systems, focusing on logging, visualization and real-time data handling.
+                </p>
+                <h3 class="mt-4">Key Learning Areas</h3>
+                <ul class="list-unstyled">
+                  <li>🔸 <strong>SCADA Logging & Security</strong>: identify critical logs for monitoring and threat detection</li>
+                  <li>🔸 <strong>SCADA Fundamentals</strong>: understand how these systems control industrial processes</li>
+                  <li>🔸 <strong>Custom SCADA Visualization</strong>: design layouts and build interactive dashboards</li>
+                  <li>🔸 <strong>Data Mapping & Tags</strong>: learn how tags and data points connect to industrial devices</li>
+                  <li>🔸 <strong>PLC Integration</strong>: connect to programmable logic controllers for real-time data exchange</li>
+                </ul>
+                <button class="btn btn-primary mt-3" data-bs-dismiss="modal" type="button">Close</button>
               </div>
             </div>
           </div>
@@ -443,27 +522,57 @@
     </div>
   </div>
 
-  <!-- solution item 4 modal popup-->
-  <div class="solution-modal modal fade" id="solutionModal4" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Solution Item 5 Modal Popup -->
+  <div class="solution-modal modal fade" id="solutionModal5" tabindex="-1" role="dialog" aria-labelledby="solutionModal5Title" aria-hidden="true">
     <div class="modal-dialog mx-auto">
       <div class="modal-content bg-dark2">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8">
-              <div class="modal-body text-muted">
-                <!-- Project details -->
-                <img class="img-fluid d-block" src="img/modal/4.png"/>
-                <p class="item-intro">SCADA - Hands-on Training</p>
-                <ul class="list-inline text-light">
-                  <li>Understand SCADA logging, knowing what logs are critical for security and monitoring.</li>
-                  <li>Learn SCADA fundamentals and how these systems control industrial processes.</li>
-                  <li>Practice designing layouts, building your own SCADA visualizations.</li>
-                  <li>Master tags, data points, and how they map to industrial devices.</li>
-                  <li>Connect to PLCs, send and receive real-time data.</li>
+              <div class="modal-body text-light">
+                <h2 id="solutionModal5Title" class="text-uppercase text-primary">PLC - Hands-On Training</h2>
+                <img class="img-fluid d-block mt-3" src="img/modal/5.png" alt="PLC hands-on training interface" loading="lazy"/>
+                <p class="item-intro mt-3">
+                  <strong>PLC Hands-On Training</strong> provides in-depth learning on programmable logic controllers, covering security, automation and industrial integration.
+                </p>
+                <h3 class="mt-4">Key Learning Areas</h3>
+                <ul class="list-unstyled">
+                  <li>🔸 <strong>PLC Log Analysis</strong>: identify critical security and operational data</li>
+                  <li>🔸 <strong>I/O Mapping & Addressing</strong>: understand PLC memory, inputs and outputs</li>
+                  <li>🔸 <strong>PLC Fundamentals</strong>: learn how PLCs automate industrial processes</li>
+                  <li>🔸 <strong>Programming Languages</strong>: write ladder logic, function blocks and structured text</li>
+                  <li>🔸 <strong>SCADA Integration</strong>: connect PLCs to SCADA for real-world automation simulation</li>
                 </ul>
-                <button class="btn btn-primary" data-bs-dismiss="modal" type="button">
-                  Close
-                </button>
+                <button class="btn btn-primary mt-3" data-bs-dismiss="modal" type="button">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Solution Item 6 Modal Popup -->
+  <div class="solution-modal modal fade" id="solutionModal6" tabindex="-1" role="dialog" aria-labelledby="solutionModal6Title" aria-hidden="true">
+    <div class="modal-dialog mx-auto">
+      <div class="modal-content bg-dark2">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="modal-body text-light">
+                <h2 id="solutionModal6Title" class="text-uppercase text-primary">ICS Tools - Engineering Workstation</h2>
+                <img class="img-fluid d-block mt-3" src="img/modal/6.png" alt="Engineering Workstation with ICS tools" loading="lazy"/>
+                <p class="item-intro mt-3">
+                  <strong>Engineering Workstation (EWS)</strong> is a pre-configured OT/ICS environment with essential security and automation tools for industrial control systems.
+                </p>
+                <h3 class="mt-4">Key Capabilities</h3>
+                <ul class="list-unstyled">
+                  <li>🔸 <strong>Pre-Configured EWS</strong>: ready-to-use setup for PLC programming and SCADA deployment</li>
+                  <li>🔸 <strong>Remote Access Security</strong>: set up and test secure remote connections for ICS environments</li>
+                  <li>🔸 <strong>Industrial Protocol Analysis</strong>: monitor and analyze Modbus, DNP3 and other ICS protocols</li>
+                  <li>🔸 <strong>File Transfers</strong>: implement safe methods to prevent malware and unauthorized access</li>
+                  <li>🔸 <strong>Firewall Testing</strong>: learn how to implement secure OT network segmentation</li>
+                </ul>
+                <button class="btn btn-primary mt-3" data-bs-dismiss="modal" type="button">Close</button>
               </div>
             </div>
           </div>
@@ -472,64 +581,24 @@
     </div>
   </div>
 
-  <!-- solution item 5 modal popup-->
-  <div class="solution-modal modal fade" id="solutionModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog mx-auto">
-      <div class="modal-content bg-dark2">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <div class="modal-body text-muted">
-                <!-- Project details -->
-                <img class="img-fluid d-block" src="img/modal/5.png"/>
-                <p class="item-intro">PLC - Hands-on Training</p>
-                <ul class="list-inline text-light">
-                  <li>Analyze PLC logs, knowing what data is critical for security and monitoring.</li>
-                  <li>Understand I/O mapping, addressing, and communication protocols.</li>
-                  <li>Learn PLC fundamentals and how they control industrial processes.</li>
-                  <li>Practice writing ladder logic, function blocks, and structured text.</li>
-                  <li>Connect PLCs to SCADA, simulate real-world automation.</li>
-                </ul>
-                <button class="btn btn-primary" data-bs-dismiss="modal" type="button">
-                  Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- solution item 6 modal popup-->
-  <div class="solution-modal modal fade" id="solutionModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog mx-auto">
-      <div class="modal-content bg-dark2">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <div class="modal-body text-muted">
-                <!-- Project details -->
-                <img class="img-fluid d-block" src="img/modal/6.png"/>
-                <p class="item-intro">ICS Tools - Engineering Workstation</p>
-                <ul class="list-inline text-light">
-                  <li>Pre-configured Engineering Workstation (EWS) with essential OT/ICS tools.</li>
-                  <li>Ready for full engineering work, from PLC programming to SCADA project deployment.</li>
-                  <li>Learn and test firewall rules, creating secure OT network segmentation.</li>
-                  <li>Set up and test secure remote access for industrial environments.</li>
-                  <li>Practice safe file transfer methods to prevent malware and unauthorized access.</li>
-                </ul>
-                <button class="btn btn-primary" data-bs-dismiss="modal" type="button">
-                  Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Labshock Solutions",
+  "description": "Comprehensive OT/ICS security solutions, including IDS, SIEM integration, penetration testing, SCADA and PLC training.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Labshock"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  }
+}
+</script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/scripts.js"></script>
 </body>
